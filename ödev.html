@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="container">
+  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ayakkabı Sitesi</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div
+        class="header-content"
+      >  
+      <span>sneakers</span>
+      </div>
+      <nav class="navbar">
+              <a href="#">Collections</a>       
+              <a href="#">Men</a>            
+              <a href="#">Woman</a>            
+              <a href="#">About</a>            
+              <a href="#">Contact</a>       
+      </nav>
+
+      <div class="buttons">
+        <button>
+          <i class="fa-regular fa-cart-shopping"></i>
+        </button>
+      </div>
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
+    </header>
+
+    <div class="container">
+    <div class="home">
+      <div class="gallery">
+        <div class="main-image-container">
+            <img src="images/image1.jpg" alt="Main Image" id="mainImage" class="main-image">
+        </div>
+        <div class="thumbnail-container">
+            <img src="images/image1.jpg" alt="Image 1" class="thumbnail" onclick="changeImage('image1.jpg')">
+            <img src="images/image2.jpg" alt="Image 2" class="thumbnail" onclick="changeImage('image2.jpg')">
+            <img src="images/image3.jpg" alt="Image 3" class="thumbnail" onclick="changeImage('image3.jpg')">
+            <img src="images/image4.jpg" alt="Image 4" class="thumbnail" onclick="changeImage('image4.jpg')">
+        </div>
+      </div>  
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+    </script>  
+
+      <div class="content">
+        <h4>SNEAKER COMPANY</h4>
+        <h1>Fall Limited Edition <br/> 
+          Sneakers</h1>
+        <p>These low-profile sneakers are your perfect casual wear <br/>
+          companion. Featuring a durable rubber outher sole, they'll <br/>
+          withstand everything the weather can offer.
+        </p>
+        <h3>$125.00</h3>
+        <div class="add-to-cart"> 
+                  <input type="number" value="0" min="0" 
+        class="quantity-input"> 
+                  <button class="add-to-cart-btn">Add to cart</button> 
+                </div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
