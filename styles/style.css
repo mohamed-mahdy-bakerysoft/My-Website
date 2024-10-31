@@ -219,8 +219,15 @@ section {
 
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
-        padding: 1rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2%;
+        margin: 1rem 0;
+    }
+
+    .logo img {
+        height: 2rem; /* Logoyu küçült */
     }
 
     .header .navbar a {
@@ -233,6 +240,7 @@ section {
         padding: 0.2rem 0.5rem;
         margin-left: 5px;
     }
+
 
     .home {
         flex-direction: column;
