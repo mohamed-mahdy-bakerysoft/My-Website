@@ -194,3 +194,99 @@ section {
 .add-to-cart-btn:hover { 
     background-color: #f96f3c; 
 }
+
+@media (max-width: 1200px) {
+    .container {
+        margin-left: 50px;
+    }
+
+    .home .content h1 {
+        font-size: 30px;
+    }
+
+    .home .content h3 {
+        font-size: 22px;
+    }
+
+    .home .content h4, .home .content p {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .header .navbar a {
+        font-size: 14px;
+        margin: 0 0.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home .main-image-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .home .thumbnail-container {
+        justify-content: center;
+    }
+
+    .container {
+        margin-left: 0;
+    }
+
+    .home .content h1 {
+        font-size: 28px;
+    }
+
+    .home .content h3 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .navbar a {
+        font-size: 12px;
+    }
+
+    .home .content h1 {
+        font-size: 24px;
+    }
+
+    .home .content h3 {
+        font-size: 18px;
+    }
+
+    .home .content h4, .home .content p {
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 8px;
+    }
+
+    .add-to-cart-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .quantity-input {
+        width: 40px;
+    }
+}
