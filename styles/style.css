@@ -224,8 +224,14 @@ section {
     }
 
     .header .navbar a {
-        font-size: 14px;
+        font-size: 14px; /* Navbar bağlantılarını küçült */
         margin: 0 0.5rem;
+    }
+
+    .header .buttons button {
+        font-size: 14px; /* Butonları küçült */
+        padding: 0.2rem 0.5rem;
+        margin-left: 5px;
     }
 
     .home {
