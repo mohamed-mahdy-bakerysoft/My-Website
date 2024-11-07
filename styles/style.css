@@ -195,6 +195,7 @@ section {
     background-color: #f96f3c; 
 }
 
+/* 1200px ve daha küçük ekranlar */
 @media (max-width: 1200px) {
     .container {
         margin-left: 50px;
@@ -217,7 +218,9 @@ section {
     }
 }
 
+/* 768px ve daha küçük ekranlar */
 @media (max-width: 768px) {
+    /* Header ve Logo Ayarları */
     .header {
         flex-direction: row;
         align-items: center;
@@ -241,58 +244,56 @@ section {
         margin-left: 5px;
     }
 
-
+    /* Ana Görsel ve İçerik Düzenlemeleri */
     .home {
         flex-direction: column;
         align-items: center;
+        margin-top: 2rem;
     }
 
     .home .main-image-container {
         width: 90%;
-        height: auto;
+        height: auto; /* Otomatik yüksekliği koruyun */
     }
 
     .home .thumbnail-container {
-        justify-content: center;
+        display: none; /* Thumbnail resimleri gizle */
     }
 
     .container {
         margin-left: 0;
     }
 
-    .home .content h1 {
-        font-size: 28px;
-    }
-
+    .home .content h1,
     .home .content h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .btn {
-        padding: 10px 40px;
+        padding: 12px 50px;
+        font-size: 14px;
     }
 }
 
+/* 480px ve daha küçük ekranlar */
 @media (max-width: 480px) {
     .header .navbar a {
         font-size: 12px;
     }
 
-    .home .content h1 {
-        font-size: 24px;
-    }
-
+    .home .content h1,
     .home .content h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .home .content h4, .home .content p {
-        font-size: 10px;
+    .home .content h4, 
+    .home .content p {
+        font-size: 14px;
     }
 
     .btn {
-        padding: 10px 20px;
-        font-size: 8px;
+        padding: 10px 25px;
+        font-size: 12px;
     }
 
     .add-to-cart-btn {
@@ -301,6 +302,6 @@ section {
     }
 
     .quantity-input {
-        width: 40px;
+        width: 35px;
     }
 }
